@@ -1,4 +1,6 @@
+import mfadminThumb from "@/assets/projects/grow/mf-admin2.PNG";
 import katerThumb from "@/assets/projects/kater/kater (1).png";
+import soitThumb from "@/assets/projects/soit/soit (1).png";
 import tbxThumb from "@/assets/projects/tbxm-2.png";
 import troyThumb from "@/assets/projects/troy-1.png";
 import vNextDemoThumb from "@/assets/projects/vnext-demostore2.PNG";
@@ -51,6 +53,38 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 3,
+    title: "Soit!",
+    imageUrl: soitThumb,
+    description: "UI development for South Korean e-commerce platform.",
+    stack: [
+      "React",
+      "Vite",
+      "TailwindCSS",
+      "TradingView",
+      "Zustand",
+      "shadcn/ui",
+    ],
+    cover: true,
+  },
+  {
+    id: 4,
+    title: "ARQO",
+    imageUrl: mfadminThumb,
+    description:
+      "Full stack development for Grow Inc's managed funds platform ARQO.",
+    stack: [
+      "Vue",
+      "Vite",
+      "Node.js",
+      "MongoDB",
+      "TailwindCSS",
+      "Pinia",
+      "PrimeVue",
+    ],
+    cover: true,
+  },
+  {
+    id: 80,
     title: "Zombied",
     imageUrl: zomThumb,
     description: "Backend development for a web-based poker game.",
@@ -58,7 +92,7 @@ const portfolioItems: PortfolioItem[] = [
     cover: true,
   },
   {
-    id: 4,
+    id: 90,
     title: "The BullX Trade",
     imageUrl: tbxThumb,
     description: "South Korean-based digital asset trading platform.",
@@ -66,7 +100,7 @@ const portfolioItems: PortfolioItem[] = [
     cover: false,
   },
   {
-    id: 5,
+    id: 100,
     title: "vNext Dashboards",
     imageUrl: vNextThumb,
     description:
@@ -75,7 +109,7 @@ const portfolioItems: PortfolioItem[] = [
     cover: true,
   },
   {
-    id: 6,
+    id: 101,
     title: "vNext Demo Store",
     imageUrl: vNextDemoThumb,
     description:
@@ -89,6 +123,7 @@ const Projects = () => {
   return (
     <Section id="projectsSection">
       <SectionTitle>Projects</SectionTitle>
+
       <Swiper
         style={
           {
