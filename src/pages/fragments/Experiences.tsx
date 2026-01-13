@@ -1,3 +1,4 @@
+import growLogo from "@/assets/companies/grow.svg";
 import katerLogo from "@/assets/companies/kater.svg";
 import ridgetechLogo from "@/assets/companies/ridgetech.svg";
 import vestaLogo from "@/assets/companies/vesta.png";
@@ -16,6 +17,15 @@ interface ExperienceItem {
 
 const experiences = [
   {
+    companyName: "Grow Inc",
+    companyLogoUrl: growLogo,
+    companyLink: "https://www.grow.inc",
+    role: "Software Engineer",
+    description:
+      "Full stack software engineer for Grow Inc's managed funds platform, primarily working with Vue.js, TypeScript, Node.js and MongoDB.",
+    workPeriod: "June 2025 - Present",
+  },
+  {
     companyName: "Kater.ai (YC W24)",
     companyLogoUrl: katerLogo,
     companyLink: "https://www.kater.ai",
@@ -30,7 +40,7 @@ const experiences = [
     companyLink: "https://www.vesta.io",
     role: "Software Engineer",
     description:
-      "Part of the frontend team tasked in developing Vesta's dashboard platform in the fintech space. Also led the development of a JavaScript extension that implement's Vesta's API services.",
+      "Part of the frontend team tasked in developing Vesta's dashboard platform in the fintech space. Led development of a data collector service and a JavaScript SDK for seamless integration with Vesta's core API endpoints.",
     workPeriod: "May 2022 - Feb 2024",
   },
   {
