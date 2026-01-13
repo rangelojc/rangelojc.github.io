@@ -52,7 +52,7 @@ const Skills = () => {
     { icon: nextIcon, label: "Next.js" },
     { icon: vueIcon, label: "Vue.js" },
     { icon: zustandIcon, label: "Zustand" },
-    { icon: tanstackqueryIcon, label: "Tanstack (React) Query" },
+    { icon: tanstackqueryIcon, label: "Tanstack Query" },
     { icon: nodeIcon, label: "Node.js" },
     { icon: expressIcon, label: "Express" },
     { icon: sassIcon, label: "SASS" },
