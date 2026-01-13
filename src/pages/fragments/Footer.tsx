@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
 
       <span className="mt-4 text-sm flex-row-v-center gap-x-1">
-        Built with <DiReact className="size-5" /> a little bit of
+        Built with <DiReact className="size-5" /> and a little bit of
         <FaHeart className="size-4 ml-1" />
       </span>
     </footer>
