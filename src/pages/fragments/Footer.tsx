@@ -7,7 +7,7 @@ const styles = {
 
 const Footer = () => {
   return (
-    <footer className="mt-20 w-screen flex-col-center gap-y-4 bg-secondary-900 px-8 pt-8 pb-4">
+    <footer className="mt-20 w-full flex-col-center gap-y-4 bg-secondary-900 px-8 pt-8 pb-4">
       <div className="flex-row-v-center gap-x-4">
         <a
           className={styles.link}
