@@ -7,9 +7,9 @@ import { Show } from "../../components/Show";
 import { Section, SectionTitle } from "./Widgets";
 
 interface ExperienceItem {
-  companyName: string;
+  companyName?: string;
   companyLogoUrl?: string;
-  companyLink: string;
+  companyLink?: string;
   role: string;
   description: string;
   workPeriod: string;
@@ -17,13 +17,19 @@ interface ExperienceItem {
 
 const experiences = [
   {
+    role: "Independent Contractor / Frontend Consultant",
+    description:
+      "Partnered with various clients to deliver custom UI solutions for portals and sites in multiple industries - such as e-commerce, digital asset trading and commercial services.",
+    workPeriod: "April 2025 - Present",
+  },
+  {
     companyName: "Grow Inc",
     companyLogoUrl: growLogo,
     companyLink: "https://www.grow.inc",
     role: "Software Engineer",
     description:
       "Full stack software engineer for Grow Inc's managed funds platform, primarily working with Vue.js, TypeScript, Node.js and MongoDB.",
-    workPeriod: "June 2025 - Present",
+    workPeriod: "June 2025 - April 2026",
   },
   {
     companyName: "Kater.ai (YC W24)",
@@ -67,7 +73,7 @@ const ExperienceCard = ({ data }: { data: ExperienceItem }) => {
   return (
     <div className="flex-none w-full flex flex-col items-start p-6 bg-primary-900 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-white md:w-2/3 lg:w-1/2">
       <a
-        href={data.companyLink}
+        href={data.companyLink || "#"}
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center mb-4"
